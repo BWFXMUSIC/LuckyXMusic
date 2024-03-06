@@ -52,7 +52,6 @@ InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/https://t.me/+g0YcEKl54yU0Z
             InlineKeyboardButton("» ᴀᴅᴅ ᴍᴇ «", url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")
         ]
     ]
-)
 
 async def send_message_to_chats():
     try:
