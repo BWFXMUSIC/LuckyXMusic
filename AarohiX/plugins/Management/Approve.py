@@ -30,7 +30,7 @@ close_button = InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="close
 @Adisa.on_callback_query(filters.regex("gib_source"))
 async def gib_repo_callback(_, callback_query):
     await callback_query.edit_message_media(
-        media=InputMediaVideo("https://graph.org/file/61a29e7e22e6ff916e5cd.mp4", has_spoiler=True),
+        media=InputMediaVideo("https://te.legra.ph/file/5b66cee024b3648a40ad4.mp4", has_spoiler=True),
         reply_markup=InlineKeyboardMarkup(
             [
                 [close_button]
@@ -99,8 +99,8 @@ CHAT_ID = [int(Adisa) for Adisa in chat_id_env.split(",")] if chat_id_env else [
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "**❅─────✧❅✦❅✧─────❅**\n**🥀ʜᴇʏ {mention}**\n\n**🏓ᴡᴇʟᴄᴏᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ✨**\n\n**➻** {title}\n\n**💞ɴᴏᴡ ᴍᴀᴋᴇ ɴᴇᴡ ғʀɪᴇɴᴅs ᴀɴᴅ sᴛᴀʏ ᴀʟᴡᴀʏs ᴏɴʟɪɴᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ🥳**\n**❅─────✧❅✦❅✧─────❅**")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
-# List of random photo links
-random_photo_links = [
+# List of random video links
+random_video_links = [
     "https://graph.org/file/e9eb24350ac3fa98bc49d.mp4",
     "https://graph.org/file/f4fd3351836cec8bc6914.mp4",
     "https://graph.org/file/f4fd3351836cec8bc6914.mp4",
@@ -136,7 +136,7 @@ async def autoapprove(client: Adisa, message: ChatJoinRequest):
             [
                 [
                     InlineKeyboardButton(
-                        "• ʀᴇᴘᴏ •", callback_data="gib_source")
+                        "• 𝙾𝚆𝙽𝙴𝚁 •", callback_data="gib_source")
                 ]
             ]
         ),
