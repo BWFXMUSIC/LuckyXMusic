@@ -51,7 +51,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = first_page(_)
-            await message.reply_video("https://telegraph/file/5b66cee024b3648a40ad4.mp4")
+            await message.reply_sticker("CAACAgUAAxkBAAEBOHxl6CtXOS8GynsD1TTntPkz0xpMywAChQsAAgnTkVSy4-BIOOTzaR4E")
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
