@@ -104,7 +104,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_video("https://graph.org/file/e9eb24350ac3fa98bc49d.mp4")
+        await message.reply_sticker("CAACAgUAAxkBAAEBOHxl6CtXOS8GynsD1TTntPkz0xpMywAChQsAAgnTkVSy4-BIOOTzaR4E")
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
