@@ -44,16 +44,12 @@ async def tag_all_users(_, message):
         except Exception as e:
             print(e)
 
-@app.on_message(filters.command(["stopmention", "offutag", "cancelutag", "utagstop", "stopall", "cancelmention", "offmention", "mentionoff", "alloff", "cancelall", "allcancel" ], prefixes=["/", "@", "#"]) & admin_filter)
-async def cancelcmd(_, message):
+@app.on_message(filters.command(["stoputag", "stopuall", "offutag", "offuall", "utagoff", "ualloff"], prefixes=["/", ".", "@", "#"]) & admin_filter)
+async def stop_tagging(_, message):
+    global SPAM_CHATS
     chat_id = message.chat.id
-    if chat_id in SPAM_CHATS:
-        try :
-            SPAM_CHATS.remove(chat_id)
-        except Exception:
-            pass   
-        return await message.reply_text("**ᴛᴀɢɢɪɴɢ ᴘʀᴏᴄᴇss sᴜᴄᴄᴇssғᴜʟʟʏ sᴛᴏᴘᴘᴇᴅ!**")     
-                                     
-    else :
-        await message.reply_text("**ɴᴏ ᴘʀᴏᴄᴇss ᴏɴɢᴏɪɴɢ!**")  
-        return       
+    if SPAM_CHATS.get(chat_id) == True:
+        SPAM_CHATS[chat_id] = False
+        return await message.reply_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ sᴛᴏᴘᴘɪɴɢ ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢɢɪɴɢ...**")
+    else:
+        await message.reply_text("**ᴜᴛᴀɢ ᴘʀᴏᴄᴇss ɪs ɴᴏᴛ ᴀᴄᴛɪᴠᴇ**")
