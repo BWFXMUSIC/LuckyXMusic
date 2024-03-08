@@ -201,7 +201,7 @@ async def mention_all(client, message):
         usrtxt += f"{usr.user.mention}"
 
         if usrnum == 1:
-            txt = f"{usrtxt} {random.choice(TAGMES)}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stopatag ||"
+            txt = f"{usrtxt} {random.choice(TAGMES)}"
             await userbot.one.send_message(chat_id, txt)
             await asyncio.sleep(7)
             usrnum = 0
@@ -246,7 +246,7 @@ async def mention_allvc(client, message):
         usrtxt += f"{usr.user.mention}"
 
         if usrnum == 1:
-            txt = f"{usrtxt} {random.choice(VC_TAG)}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stopavctag ||"
+            txt = f"{usrtxt} {random.choice(VC_TAG)}"
             await userbot.one.send_message(chat_id, txt)
             await asyncio.sleep(5)
             usrnum = 0
