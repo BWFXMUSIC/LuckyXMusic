@@ -7,7 +7,7 @@ from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
 from AarohiX import app
 from AarohiX.utils.top_ban import admin_filter
-userbot = Userbot()
+
 SPAM_CHATS = {}
 
 @app.on_message(filters.command(["utag", "uall"], prefixes=["/", "@", ".", "#"]) & admin_filter)
