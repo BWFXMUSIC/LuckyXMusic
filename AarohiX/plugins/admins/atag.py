@@ -198,7 +198,7 @@ async def mention_all(client, message):
         if usr.user.is_bot:
             continue
         usrnum += 1
-        usrtxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
+        usrtxt += f"{mention.user.first_name}](tg://user?id={mention.user.id}"
 
         if usrnum == 1:
             txt = f"{usrtxt} {random.choice(TAGMES)}"
@@ -243,7 +243,7 @@ async def mention_allvc(client, message):
         if usr.user.is_bot:
             continue
         usrnum += 1
-        usrtxt += f"\n⊚ [{m.user.first_name}](tg://user?id={m.user.id})\n"
+        usrtxt += f"{mention.user.first_name}](tg://user?id={mention.user.id}"
 
         if usrnum == 1:
             txt = f"{usrtxt} {random.choice(VC_TAG)}"
