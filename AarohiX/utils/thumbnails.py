@@ -1,16 +1,15 @@
+import asyncio
 import os
+import random
 import re
 import textwrap
-
 import aiofiles
 import aiohttp
-import numpy as np
-
-from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
+                 ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
-
+import numpy as np
 from config import YOUTUBE_IMG_URL
-from AarohiX import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -82,7 +81,7 @@ async def gen_thumb(videoid, user_id):
         x = f.resize((107, 107))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"AarohiX/assets/anonx16.png")
+        bg = Image.open(f"AarohiX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(10))
@@ -222,7 +221,7 @@ async def gen_qthumb(videoid, user_id):
         x = f.resize((107, 107))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"AarohiX/assets/anonx16.png")
+        bg = Image.open(f"AarohiX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(10))
