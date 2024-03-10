@@ -1,16 +1,16 @@
+import asyncio
 import os
+import random
 import re
 import textwrap
-
 import aiofiles
 import aiohttp
-import numpy as np
-import random
-
-from PIL import Image, ImageChops, ImageOps, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
+                 ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
+import numpy as np
 
-from AarohiX import dil
+from AarohiX import bot
 from AarohiX.resource import thumbs, colors
 from AarohiX.utils.config import YOUTUBE_IMG_URL
 
