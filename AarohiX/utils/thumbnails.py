@@ -10,9 +10,11 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
 from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
 
+from AarohiX config import 
 from AarohiX import bot
 from AarohiX.resource import thumbs, colors
-from AarohiX.utils.config import YOUTUBE_IMG_URL
+from AarohiX.utils import
+YOUTUBE_IMG_URL
 
 
 
