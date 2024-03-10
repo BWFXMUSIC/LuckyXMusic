@@ -10,7 +10,7 @@ import random
 from PIL import Image, ImageChops, ImageOps, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
 
-from AarohiX import bot
+from AarohiX import dil
 from AarohiX.resource import thumbs, colors
 from AarohiX.utils.config import YOUTUBE_IMG_URL
 
