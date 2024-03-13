@@ -60,7 +60,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     elif 80 <= top < 95:
         bar = "ﮩ❤️٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
     else:
-        bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ❤️"
+        bar = "𝐋𝚞𝚌𝚔𝚢🅧𝐌𝚞𝚜𝚒𝚌❤️"
     buttons = [
         [
             InlineKeyboardButton(
