@@ -11,7 +11,6 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
 from youtubesearchpython.__future__ import VideosSearch
 from AarohiX import bot
 from AarohiX.resource import thumbs, colors
-from AarohiX.config import
 from AarohiX.plugins import
 from AarohiX.utils import
 YOUTUBE_IMG_URL
