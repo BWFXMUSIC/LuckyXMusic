@@ -8,8 +8,9 @@ import aiohttp
 from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
-import numpy as np
-from config import YOUTUBE_IMG_URL
+from AarohiX import bot
+from AarohiX.resource import thumbs, colors
+from AarohiX.config import YOUTUBE_IMG_URL
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -83,7 +84,7 @@ async def gen_thumb(videoid, user_id):
         images = random.choice(thumbs)
         border = random.choice(colors)
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"SankiMusic/resource/{images}.png")
+        bg = Image.open(f"AarohiX/resource/{images}.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -118,10 +119,10 @@ async def gen_thumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
         img = ImageOps.expand(background, border=10, fill=f"{border}")
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype("SankiMusic/resource/font2.ttf", 45)
-        ImageFont.truetype("SankiMusic/resource/font2.ttf", 70)
-        arial = ImageFont.truetype("SankiMusic/resource/font2.ttf", 30)
-        ImageFont.truetype("SankiMusic/resource/font.ttf", 30)
+        font = ImageFont.truetype("AarohiX/resource/font2.ttf", 45)
+        ImageFont.truetype("AarohiX/resource/font2.ttf", 70)
+        arial = ImageFont.truetype("AarohiX/resource/font2.ttf", 30)
+        ImageFont.truetype("AarohiX/resource/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
@@ -225,7 +226,7 @@ async def que_thumb(videoid, user_id):
         images = random.choice(thumbs)
         border = random.choice(colors)
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"SankiMusic/resource/{images}.png")
+        bg = Image.open(f"AarohiX/resource/{images}.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -260,10 +261,10 @@ async def que_thumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
         img = ImageOps.expand(background, border=10, fill=f"{border}")
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype("SankiMusic/resource/font2.ttf", 45)
-        ImageFont.truetype("SankiMusic/resource/font2.ttf", 70)
-        arial = ImageFont.truetype("SankiMusic/resource/font2.ttf", 30)
-        ImageFont.truetype("SankiMusic/resource/font.ttf", 30)
+        font = ImageFont.truetype("AarohiX/resource/font2.ttf", 45)
+        ImageFont.truetype("AarohiX/resource/font2.ttf", 70)
+        arial = ImageFont.truetype("AarohiX/resource/font2.ttf", 30)
+        ImageFont.truetype("AarohiX/resource/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
