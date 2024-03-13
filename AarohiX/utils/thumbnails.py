@@ -5,12 +5,17 @@ import re
 import textwrap
 import aiofiles
 import aiohttp
+import numpy as np
 from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
-                 ImageFont, ImageOps)
+                 ImageFont, ImageChops, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
 from AarohiX import bot
 from AarohiX.resource import thumbs, colors
-from AarohiX.config import YOUTUBE_IMG_URL
+from AarohiX.config import
+from AarohiX.inline import 
+from AarohiX.plugins import
+from AarohiX.utils import
+YOUTUBE_IMG_URL
 
 
 def changeImageSize(maxWidth, maxHeight, image):
