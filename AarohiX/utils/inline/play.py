@@ -20,7 +20,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id",
+                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id={OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", url=SUPPORT_CHANNEL,
@@ -42,7 +42,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     top = math.floor(percentage)
     if 0 < top <= 10:
-        bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ❤️"
+        bar = "❤️ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
     elif 10 < top < 20:
         bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ❤️٨ـ"
     elif 20 <= top < 30:
@@ -60,7 +60,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     elif 80 <= top < 95:
         bar = "ﮩ❤️٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
     else:
-        bar = "❤️ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
+        bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ❤️"
     buttons = [
         [
             InlineKeyboardButton(
@@ -77,7 +77,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id",
+                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id={OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", url=SUPPORT_CHANNEL,
@@ -99,7 +99,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id",
+                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", url=f"tg://openmessage?user_id={OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", url=SUPPORT_CHANNEL,
