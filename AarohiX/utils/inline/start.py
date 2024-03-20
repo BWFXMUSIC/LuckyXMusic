@@ -51,6 +51,10 @@ InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
         [
 InlineKeyboardButton(text=_["S_B_7"], url=f"https://t.me/THE_OP_BOY")
         ],
+        [
+InlineKeyboardButton(text=_["S_B_8"], url=f"https://t.me/+UQUsfzMdlIJjNjll"),
+            InlineKeyboardButton(text=_["S_B_9"], url=f"https://t.me/T_QUIZ"),
+        ],
     ]
 
     return buttons
