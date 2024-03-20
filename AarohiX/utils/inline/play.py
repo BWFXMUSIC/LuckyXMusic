@@ -20,7 +20,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.OWNER_ID",
+                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.{OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
@@ -78,7 +78,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥",
-user_id=OWNER_ID",
+user_id={OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
@@ -100,7 +100,7 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.OWNER_ID",
+                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.{OWNER_ID}",
             ),
             InlineKeyboardButton(
                 text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
