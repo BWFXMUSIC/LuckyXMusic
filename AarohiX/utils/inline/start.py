@@ -33,20 +33,20 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text="𝐆𝚁𝙾𝚄𝙿✨", url=config.SUPPORT_CHAT),
-            InlineKeyboardButton(text="𝚂𝙷𝙰𝚈𝚁𝙸🥀", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="💝𝐉𝙰𝙰𝙽💝", url=config.SUPPORT_CHANNEL),
         ],
         [
             InlineKeyboardButton(text="۞ 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="settings_back_helper")
         ],
         [
 InlineKeyboardButton(text="𝐒𝚃𝚄𝙳𝚈", url=f"https://t.me/+UQUsfzMdlIJjNjll"),
-            InlineKeyboardButton(text="𝟹ᴅ ᴀɪ ᴅᴘ", url=f"https://t.me/DP_AI_DP"),
+            InlineKeyboardButton(text="𝟹ᴅ ᴀɪ ᴅᴘ", url=f"https://t.me/T_QUIZ"),
         ],
         [
-InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+InlineKeyboardButton(text=_["S_B_5"], url=f"https://t.me/DP_AI_DP),
+            InlineKeyboardButton(text=_["S_B_6"], url=f"url=f"https://t.me/ZiddiXBot),
+            InlineKeyboardButton(text=_["S_B_2"], url=f"https://t.me/+g0YcEKl54yU0ZTU9),
         ],
     ]
 
