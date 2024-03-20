@@ -19,14 +19,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
             )
         ],
         [
-            InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.{OWNER_ID}",
-            ),
-            InlineKeyboardButton(
-                text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
-            )
-        ],
-        [
+           
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
@@ -76,14 +69,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="❤️‍🩹", callback_data=f"ADMIN Stop|{chat_id}")
         ],
         [
-            InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥",
-user_id={OWNER_ID}",
-            ),
-            InlineKeyboardButton(
-                text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
-            )
-        ],
+        
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -97,13 +83,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="💞", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="💔", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="❤️‍🩹", callback_data=f"ADMIN Stop|{chat_id}")
-        ],
-        [
-            InlineKeyboardButton(
-                text="❤️‍🔥𝐎𝚆𝙽𝙴𝚁❤️‍🔥", user_id=config.{OWNER_ID}",
-            ),
-            InlineKeyboardButton(
-                text="💝𝐉𝙰𝙰𝙽💝", user_id=5493923823,
+      
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
