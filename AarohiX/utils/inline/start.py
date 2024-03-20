@@ -44,9 +44,9 @@ InlineKeyboardButton(text="𝐒𝚃𝚄𝙳𝚈", url=f"https://t.me/+UQUsfzMdlI
             InlineKeyboardButton(text="𝟹ᴅ ᴀɪ ᴅᴘ", url=f"https://t.me/T_QUIZ"),
         ],
         [
-InlineKeyboardButton(text=_["S_B_5"], url=f"https://t.me/DP_AI_DP),
-            InlineKeyboardButton(text=_["S_B_6"], url=f"url=f"https://t.me/ZiddiXBot),
-            InlineKeyboardButton(text=_["S_B_2"], url=f"https://t.me/+g0YcEKl54yU0ZTU9),
+InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
     ]
 
