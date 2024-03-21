@@ -44,7 +44,7 @@ InlineKeyboardButton(text="𝐒𝚃𝚄𝙳𝚈", url=f"https://t.me/+UQUsfzMdlI
             InlineKeyboardButton(text="𝚃 𝚀𝚄𝙸𝚉", url=f"https://t.me/T_QUIZ"),
         ],
         [
-InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+InlineKeyboardButton(text=_["S_B_5"], user_id=5493923823),
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
@@ -52,8 +52,8 @@ InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
 InlineKeyboardButton(text=_["S_B_7"], url=f"https://t.me/THE_OP_BOY")
         ],
         [
-InlineKeyboardButton(text=_["S_B_8"], url=f"https://t.me/+UQUsfzMdlIJjNjll"),
-            InlineKeyboardButton(text=_["S_B_9"], url=f"https://t.me/T_QUIZ"),
+InlineKeyboardButton(text=_["S_B_8"], url=f"https://youtube.com/@Tiki_Star_786?si=R0rzHy1TsBCoLQ7B"),
+            InlineKeyboardButton(text=_["S_B_9"], url=f"https://www.instagram.com/itz_lucky.raja?igsh=ajFtZDRmbTZoaHY5"),
         ],
     ]
 
