@@ -21,10 +21,10 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                url=f""
+                url=f"🌼 ᴘʟᴀʏʟɪsᴛs"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f""
+                text="✨ 𝐎ωиєя ⏎", url=f"✨ 𝐎ωиєя ⏎"
             ),
         ],
         [
@@ -82,10 +82,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                url=f""
+                url=f"🌼 ᴘʟᴀʏʟɪsᴛs"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f""
+                text="✨ 𝐎ωиєя ⏎", url=f"✨ 𝐎ωиєя ⏎"
             ),
         ],
         [
@@ -113,10 +113,10 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                url=f""
+                url=f"🌼 ᴘʟᴀʏʟɪsᴛs"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f""
+                text="✨ 𝐎ωиєя ⏎", url=f"✨ 𝐎ωиєя ⏎"
             ),
         ],
         [
